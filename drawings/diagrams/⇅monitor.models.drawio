@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2024-08-19T20:05:24.304Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="tQMhwQM6jFwAQoQIWkrA" version="23.1.5" type="device" pages="2">
+  <diagram name="Page-1" id="almPb4OZQPHIV-QuhWSB">
+    <mxGraphModel dx="1420" dy="920" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Page-2" link="data:page/id,My1Jj7-47qGoC6mFkbGm" id="nqZ67X2XFufJU3B-c0ya-1">
+          <mxCell style="fontStyle=4;rounded=1;overflow=hidden;spacing=10;labelBackgroundColor=none;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;" parent="1" vertex="1">
+            <mxGeometry x="394" y="468" width="73" height="42" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="vxsXq8VtxmcMvx8v1A17-1" value="" style="shape=stencil(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);lineShape=1;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="279.97483122496806" y="322.8839967758654" width="258.31586510443117" height="225.56253965858969" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="My1Jj7-47qGoC6mFkbGm" name="Page-2">
+    <mxGraphModel dx="1632" dy="920" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DePPiWIVg56Kwa8GZvyS-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="332" y="431" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o0XPnuqz_aDfrhsAzyDv-1" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="396.5" y="601.5" width="47" height="31" as="geometry" />
+        </mxCell>
+        <UserObject label="Page-1" link="data:page/id,almPb4OZQPHIV-QuhWSB" id="o0XPnuqz_aDfrhsAzyDv-2">
+          <mxCell style="fontColor=#0000EE;fontStyle=4;rounded=1;overflow=hidden;spacing=10;" vertex="1" parent="1">
+            <mxGeometry x="241" y="615" width="73" height="42" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
