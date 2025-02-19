@@ -23,7 +23,7 @@ function binance_websocket_trades(symbol::String)
         )
         count = 0
         for msg in ws
-            if count == 10000
+            if count == 10
                 HTTP.WebSockets.close(ws)
                 break
             end
