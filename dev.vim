@@ -13,22 +13,20 @@ if &shortmess =~ 'A'
 else
   set shortmess=aoO
 endif
-badd +43 src/readorders.jl
-badd +1670 term://~/Obsi/Prods/03-⇅\ monitor//19039:/bin/bash
-badd +12 src/gptreadorders.jl
-badd +0 margin_trades_BTCUSDT_202531DD_213120.csv
-badd +1 margin_trades_BTCUSDT_202534DD_213443.csv
-badd +0 margin_trades_BTCUSDT_202553DD_215311.csv
-badd +0 \[
-badd +0 SUBSCRIBE,
-badd +1 ⇅monitor.models.drawio
+badd +17 docker/monitor.Dockerfile
+badd +820 term://~/Obsi/Prods/03-⇅\ monitor//85841:/bin/bash
+badd +0 term://~/Obsi/Prods/03-⇅\ monitor//102017:/bin/bash
+badd +2 utils/buildmonitor.sh
+badd +2 utils/runmonitor.sh
+badd +18 src/readbinws.jl
 argglobal
 %argdel
-$argadd src/readorders.jl
+$argadd docker/monitor.Dockerfile
 set stal=2
 tabnew +setlocal\ bufhidden=wipe
+tabnew +setlocal\ bufhidden=wipe
 tabrewind
-edit src/gptreadorders.jl
+edit src/readbinws.jl
 argglobal
 setlocal fdm=manual
 setlocal fde=0
@@ -40,20 +38,20 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 12 - ((11 * winheight(0) + 25) / 51)
+let s:l = 18 - ((17 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 12
-normal! 023|
+keepjumps 18
+normal! 0
 lcd ~/Obsi/Prods/03-⇅\ monitor
 tabnext
 argglobal
-if bufexists(fnamemodify("term://~/Obsi/Prods/03-⇅\ monitor//19039:/bin/bash", ":p")) | buffer term://~/Obsi/Prods/03-⇅\ monitor//19039:/bin/bash | else | edit term://~/Obsi/Prods/03-⇅\ monitor//19039:/bin/bash | endif
+if bufexists(fnamemodify("term://~/Obsi/Prods/03-⇅\ monitor//85841:/bin/bash", ":p")) | buffer term://~/Obsi/Prods/03-⇅\ monitor//85841:/bin/bash | else | edit term://~/Obsi/Prods/03-⇅\ monitor//85841:/bin/bash | endif
 if &buftype ==# 'terminal'
-  silent file term://~/Obsi/Prods/03-⇅\ monitor//19039:/bin/bash
+  silent file term://~/Obsi/Prods/03-⇅\ monitor//85841:/bin/bash
 endif
-balt ~/Obsi/Prods/03-⇅\ monitor/src/readorders.jl
+balt ~/Obsi/Prods/03-⇅\ monitor/docker/monitor.Dockerfile
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -62,12 +60,33 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1749 - ((50 * winheight(0) + 25) / 51)
+let s:l = 2873 - ((40 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 1749
-normal! 040|
+keepjumps 2873
+normal! 030|
+tabnext
+argglobal
+if bufexists(fnamemodify("term://~/Obsi/Prods/03-⇅\ monitor//102017:/bin/bash", ":p")) | buffer term://~/Obsi/Prods/03-⇅\ monitor//102017:/bin/bash | else | edit term://~/Obsi/Prods/03-⇅\ monitor//102017:/bin/bash | endif
+if &buftype ==# 'terminal'
+  silent file term://~/Obsi/Prods/03-⇅\ monitor//102017:/bin/bash
+endif
+balt term://~/Obsi/Prods/03-⇅\ monitor//85841:/bin/bash
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 156 - ((22 * winheight(0) + 25) / 51)
+if s:l < 1 | let s:l = 1 | endif
+keepjumps exe s:l
+normal! zt
+keepjumps 156
+normal! 0
 tabnext 1
 set stal=1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
@@ -82,6 +101,7 @@ if filereadable(s:sx)
 endif
 let &g:so = s:so_save | let &g:siso = s:siso_save
 set hlsearch
+nohlsearch
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
